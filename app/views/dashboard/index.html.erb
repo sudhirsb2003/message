@@ -1,0 +1,6 @@
+<% title "Dashboard:" %>
+
+
+<% @users.each do |u| %>
+  <%= u.full_name %> |<%= link_to "send message", new_message_path %>
+<% end %>
